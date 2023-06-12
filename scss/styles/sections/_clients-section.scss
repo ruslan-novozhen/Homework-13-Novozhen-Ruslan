@@ -1,0 +1,125 @@
+.clients {
+  width: 100%;
+  max-width: 1720px;
+  margin: 0 auto;
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #323264;
+    margin: 0 0 30px;
+    text-align: center;
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 120px 120px 120px;
+    margin-bottom: 60px;
+
+    @media screen and (max-width: 1440px) {
+      margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 1004px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 120px 120px 120px 120px;
+    }
+
+    @media screen and (max-width: 748px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 120px 120px 120px 120px 120px 120px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:nth-child(1) {
+      background-color: #1c4280;
+      border-radius: 12px 0 0 0;
+      @media screen and (max-width: 1440px) {
+        border-radius: 0;
+      }
+    }
+    &:nth-child(2) {
+      background-color: #143646;
+    }
+    &:nth-child(3) {
+      background: linear-gradient(0deg, #f48b30, #f48b30), #f48b30;
+    }
+    &:nth-child(4) {
+      background-color: #9e4dc3;
+      border-radius: 0 12px 0 0;
+      @media screen and (max-width: 1440px) {
+        border-radius: 0;
+      }
+    }
+    &:nth-child(5) {
+      background-color: #fd9339;
+    }
+    &:nth-child(6) {
+      background-color: #e2e2e4;
+    }
+    &:nth-child(7) {
+      background-color: #c71c36;
+
+      @media screen and (max-width: 748px) {
+        display: none;
+      }
+    }
+    &:nth-child(8) {
+      background-color: #dcf3f9;
+
+      @media screen and (max-width: 748px) {
+        display: none;
+      }
+    }
+    &:nth-child(9) {
+      background-color: #eaeaea;
+      border-radius: 0 0 0 12px;
+
+      @media screen and (max-width: 1440px) {
+        border-radius: 0;
+      }
+
+      @media screen and (max-width: 748px) {
+        display: none;
+      }
+    }
+    &:nth-child(10) {
+      background-color: #282240;
+
+      @media screen and (max-width: 748px) {
+        display: none;
+      }
+    }
+    &:nth-child(11) {
+      background-color: #1d4568;
+
+      @media screen and (max-width: 748px) {
+        display: none;
+      }
+    }
+    &:nth-child(12) {
+      background-color: #000000;
+      border-radius: 0 0 12px 0;
+
+      @media screen and (max-width: 1440px) {
+        border-radius: 0;
+      }
+
+      @media screen and (max-width: 748px) {
+        display: none;
+      }
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}

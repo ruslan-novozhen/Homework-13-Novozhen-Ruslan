@@ -1,0 +1,99 @@
+.news {
+  background-color: #f5f5fa;
+  padding-bottom: 30px;
+  padding-top: 30px;
+
+  &__title {
+    font-size: 38px;
+    line-height: 46px;
+    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 10px 0 30px;
+
+    @media screen and (max-width: 748px) {
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+
+    @media screen and (max-width: 1004px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 748px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__item {
+    &_3 {
+      @media screen and (max-width: 1004px) {
+        grid-column: 1 / span 2;
+      }
+    }
+  }
+}
+
+.news-box {
+  background-color: white;
+  border-radius: 8px;
+
+  &__img {
+    border-radius: 8px 8px 0 0;
+    height: 200px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &_1 {
+      background-image: url(/img/Publication/Publication-1.jpg);
+    }
+    &_2 {
+      background-image: url(/img/Publication/Publication-2.jpg);
+    }
+    &_3 {
+      background-image: url(/img/Publication/Publication-3.jpg);
+    }
+  }
+
+  &__title {
+    line-height: 20px;
+    margin: 30px 30px 15px;
+  }
+  &__link {
+    text-decoration: none;
+    color: #24a3ff;
+    &:hover,
+    & h4:hover {
+      opacity: 0.8;
+      color: #f0145a;
+      text-decoration: underline;
+    }
+  }
+
+  &__date {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #b3b3ba;
+    padding: 0 0 15px;
+    border-bottom: 4px solid #e6e6f0;
+    margin: 0 30px 15px;
+  }
+
+  &__desc {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 30px 30px;
+  }
+}
