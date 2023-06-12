@@ -96,7 +96,7 @@
               <a class="nav-header__link" href="#">about us</a>
             </li>
             <li class="nav-header__item">
-              <a class="nav-header__link" href="#">services</a>
+              <a class="nav-header__link" href="/services.html">services</a>
             </li>
             <li class="nav-header__item">
               <a class="nav-header__link" href="#">team</a>
@@ -159,20 +159,77 @@
         <div class="wraper main-screen__services services">
           <div class="services__title-box">
             <p>
-              <a class="link-to-another-page" href="#"> Services &gt;</a>
+              <a class="link-to-another-page" href="/services.html">
+                Services &gt;</a
+              >
             </p>
           </div>
           <h2 class="services__title">What can we do better than others?</h2>
           <div class="services__conteiner conteiner-service">
             <article class="conteiner-service__box">
-              <a class="conteiner-service__link" href="#">
-                <img
-                  class="conteiner-service__icon"
-                  src="/img/services/Icon.svg"
-                  alt="Ecommerce"
-                />
-                <h3 class="conteiner-service__title">IT and e-commerce</h3>
-              </a>
+              <img
+                class="conteiner-service__icon"
+                src="/img/services/Icon.svg"
+                alt="Ecommerce"
+              />
+              <input
+                type="checkbox"
+                id="one-modal-checker"
+                class="visually-hidden"
+              />
+              <h3 class="conteiner-service__title">
+                <label for="one-modal-checker" class="conteiner-service__title">
+                  Comprehensive daily legal support
+                </label>
+              </h3>
+              <!-------------------------------------------- modal-------------------------------------------- -->
+              <div class="modal" id="first-modal">
+                <div class="modal__content">
+                  <div class="modal__title">
+                    <h3>We would like to help you</h3>
+                    <label for="one-modal-checker">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 7L25 25"
+                          stroke="#EC6F5D"
+                          stroke-width="2"
+                        />
+                        <path
+                          d="M25 7L7 25"
+                          stroke="#EC6F5D"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </label>
+                  </div>
+                  <form action="#" class="modal__form">
+                    <div class="modal__form_first">
+                      <input type="text" name="name" placeholder="Name" />
+                      <textarea
+                        name="message"
+                        placeholder="Message"
+                        cols="30"
+                        rows="10"
+                      ></textarea>
+                    </div>
+                    <div class="modal__form_second">
+                      <h5>How to answer you?</h5>
+                      <input type="tel" name="tel" placeholder="Phone number" />
+                      <input type="email" name="email" placeholder="Email" />
+                    </div>
+                    <button class="modal__btn" type="submit">
+                      Send message
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <!-------------------------------------------- modal-------------------------------------------- -->
               <p class="conteiner-service__desc">
                 An endless stream of contracts, tax issues, labor relations,
                 corporate papers - legal work distracts you from doing business.
@@ -180,16 +237,69 @@
               </p>
             </article>
             <article class="conteiner-service__box">
-              <a class="conteiner-service__link" href="#">
-                <img
-                  class="conteiner-service__icon"
-                  src="/img/services/Icon-1.svg"
-                  alt="Ecommerce"
-                />
-                <h3 class="conteiner-service__title">
+              <img
+                class="conteiner-service__icon"
+                src="/img/services/Icon-1.svg"
+                alt="Ecommerce"
+              />
+              <input
+                type="checkbox"
+                id="two-modal-checker"
+                class="visually-hidden"
+              />
+              <h3 class="conteiner-service__title">
+                <label for="two-modal-checker" class="conteiner-service__title">
                   Comprehensive daily legal support
-                </h3>
-              </a>
+                </label>
+              </h3>
+              <!-------------------------------------------- modal-------------------------------------------- -->
+              <div class="modal" id="first-modal">
+                <div class="modal__content">
+                  <div class="modal__title">
+                    <h3>We would like to help you</h3>
+                    <label for="two-modal-checker">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 7L25 25"
+                          stroke="#EC6F5D"
+                          stroke-width="2"
+                        />
+                        <path
+                          d="M25 7L7 25"
+                          stroke="#EC6F5D"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </label>
+                  </div>
+                  <form action="#" class="modal__form">
+                    <div class="modal__form_first">
+                      <input type="text" name="name" placeholder="Name" />
+                      <textarea
+                        name="message"
+                        placeholder="Message"
+                        cols="30"
+                        rows="10"
+                      ></textarea>
+                    </div>
+                    <div class="modal__form_second">
+                      <h5>How to answer you?</h5>
+                      <input type="tel" name="tel" placeholder="Phone number" />
+                      <input type="email" name="email" placeholder="Email" />
+                    </div>
+                    <button class="modal__btn" type="submit">
+                      Send message
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <!-------------------------------------------- modal-------------------------------------------- -->
               <p class="conteiner-service__desc">
                 In addition, over time, the work will become the same type and
                 uninteresting for a full-time lawyer. And we know very well how
@@ -198,16 +308,72 @@
               </p>
             </article>
             <article class="conteiner-service__box">
-              <a class="conteiner-service__link" href="#">
-                <img
-                  class="conteiner-service__icon"
-                  src="/img/services/Icon-2.svg"
-                  alt="Ecommerce"
-                />
-                <h3 class="conteiner-service__title">
+              <img
+                class="conteiner-service__icon"
+                src="/img/services/Icon-2.svg"
+                alt="Ecommerce"
+              />
+              <input
+                type="checkbox"
+                id="three-modal-checker"
+                class="visually-hidden"
+              />
+              <h3 class="conteiner-service__title">
+                <label
+                  for="three-modal-checker"
+                  class="conteiner-service__title"
+                >
                   Structuring corporate relationships
-                </h3>
-              </a>
+                </label>
+              </h3>
+              <!-------------------------------------------- modal-------------------------------------------- -->
+              <div class="modal" id="first-modal">
+                <div class="modal__content">
+                  <div class="modal__title">
+                    <h3>We would like to help you</h3>
+                    <label for="three-modal-checker">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 7L25 25"
+                          stroke="#EC6F5D"
+                          stroke-width="2"
+                        />
+                        <path
+                          d="M25 7L7 25"
+                          stroke="#EC6F5D"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </label>
+                  </div>
+                  <form action="#" class="modal__form">
+                    <div class="modal__form_first">
+                      <input type="text" name="name" placeholder="Name" />
+                      <textarea
+                        name="message"
+                        placeholder="Message"
+                        cols="30"
+                        rows="10"
+                      ></textarea>
+                    </div>
+                    <div class="modal__form_second">
+                      <h5>How to answer you?</h5>
+                      <input type="tel" name="tel" placeholder="Phone number" />
+                      <input type="email" name="email" placeholder="Email" />
+                    </div>
+                    <button class="modal__btn" type="submit">
+                      Send message
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <!-------------------------------------------- modal-------------------------------------------- -->
               <p class="conteiner-service__desc">
                 Instead of just providing legal services, we will hire a lawyer
                 or a whole team that will fit into the daily life of your
@@ -215,16 +381,69 @@
               </p>
             </article>
             <article class="conteiner-service__box">
-              <a class="conteiner-service__link" href="#">
-                <img
-                  class="conteiner-service__icon"
-                  src="/img/services/Icon-3.svg"
-                  alt="Ecommerce"
-                />
-                <h3 class="conteiner-service__title">
-                  Building contractual relations
-                </h3>
-              </a>
+              <img
+                class="conteiner-service__icon"
+                src="/img/services/Icon-3.svg"
+                alt="Ecommerce"
+              />
+              <input
+                type="checkbox"
+                id="four-modal-checker"
+                class="visually-hidden"
+              />
+              <h3 class="conteiner-service__title">
+                <label for="four-modal-checker" class="conteiner-service__title"
+                  >Building contractual relations
+                </label>
+              </h3>
+              <!-------------------------------------------- modal-------------------------------------------- -->
+              <div class="modal" id="first-modal">
+                <div class="modal__content">
+                  <div class="modal__title">
+                    <h3>We would like to help you</h3>
+                    <label for="four-modal-checker">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 7L25 25"
+                          stroke="#EC6F5D"
+                          stroke-width="2"
+                        />
+                        <path
+                          d="M25 7L7 25"
+                          stroke="#EC6F5D"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </label>
+                  </div>
+                  <form action="#" class="modal__form">
+                    <div class="modal__form_first">
+                      <input type="text" name="name" placeholder="Name" />
+                      <textarea
+                        name="message"
+                        placeholder="Message"
+                        cols="30"
+                        rows="10"
+                      ></textarea>
+                    </div>
+                    <div class="modal__form_second">
+                      <h5>How to answer you?</h5>
+                      <input type="tel" name="tel" placeholder="Phone number" />
+                      <input type="email" name="email" placeholder="Email" />
+                    </div>
+                    <button class="modal__btn" type="submit">
+                      Send message
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <!-------------------------------------------- modal-------------------------------------------- -->
               <p class="conteiner-service__desc">
                 Once a week, or week after month, you have your own lawyer by
                 your side. Anyone in the company can catch it at the coffee
@@ -233,16 +452,69 @@
               </p>
             </article>
             <article class="conteiner-service__box">
-              <a class="conteiner-service__link" href="#">
-                <img
-                  class="conteiner-service__icon"
-                  src="/img/services/Icon-4.svg"
-                  alt="Ecommerce"
-                />
-                <h3 class="conteiner-service__title">
-                  Protection of business, intellectual property
-                </h3>
-              </a>
+              <img
+                class="conteiner-service__icon"
+                src="/img/services/Icon-4.svg"
+                alt="Ecommerce"
+              />
+              <input
+                type="checkbox"
+                id="five-modal-checker"
+                class="visually-hidden"
+              />
+              <h3 class="conteiner-service__title">
+                <label for="five-modal-checker" class="conteiner-service__title"
+                  >Protection of business, intellectual property
+                </label>
+              </h3>
+              <!-------------------------------------------- modal-------------------------------------------- -->
+              <div class="modal" id="first-modal">
+                <div class="modal__content">
+                  <div class="modal__title">
+                    <h3>We would like to help you</h3>
+                    <label for="five-modal-checker">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 7L25 25"
+                          stroke="#EC6F5D"
+                          stroke-width="2"
+                        />
+                        <path
+                          d="M25 7L7 25"
+                          stroke="#EC6F5D"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </label>
+                  </div>
+                  <form action="#" class="modal__form">
+                    <div class="modal__form_first">
+                      <input type="text" name="name" placeholder="Name" />
+                      <textarea
+                        name="message"
+                        placeholder="Message"
+                        cols="30"
+                        rows="10"
+                      ></textarea>
+                    </div>
+                    <div class="modal__form_second">
+                      <h5>How to answer you?</h5>
+                      <input type="tel" name="tel" placeholder="Phone number" />
+                      <input type="email" name="email" placeholder="Email" />
+                    </div>
+                    <button class="modal__btn" type="submit">
+                      Send message
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <!-------------------------------------------- modal-------------------------------------------- -->
               <p class="conteiner-service__desc">
                 And all the other time he will work on new diverse projects, so
                 he will definitely not stop in professional development. One way
@@ -251,16 +523,69 @@
               </p>
             </article>
             <article class="conteiner-service__box">
-              <a class="conteiner-service__link" href="#">
-                <img
-                  class="conteiner-service__icon"
-                  src="/img/services/Icon-5.svg"
-                  alt="Ecommerce"
-                />
-                <h3 class="conteiner-service__title">
-                  Judicial representation
-                </h3>
-              </a>
+              <img
+                class="conteiner-service__icon"
+                src="/img/services/Icon-5.svg"
+                alt="Ecommerce"
+              />
+              <input
+                type="checkbox"
+                id="six-modal-checker"
+                class="visually-hidden"
+              />
+              <h3 class="conteiner-service__title">
+                <label for="six-modal-checker" class="conteiner-service__title"
+                  >Judicial representation
+                </label>
+              </h3>
+              <!-------------------------------------------- modal-------------------------------------------- -->
+              <div class="modal" id="first-modal">
+                <div class="modal__content">
+                  <div class="modal__title">
+                    <h3>We would like to help you</h3>
+                    <label for="six-modal-checker">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 7L25 25"
+                          stroke="#EC6F5D"
+                          stroke-width="2"
+                        />
+                        <path
+                          d="M25 7L7 25"
+                          stroke="#EC6F5D"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </label>
+                  </div>
+                  <form action="#" class="modal__form">
+                    <div class="modal__form_first">
+                      <input type="text" name="name" placeholder="Name" />
+                      <textarea
+                        name="message"
+                        placeholder="Message"
+                        cols="30"
+                        rows="10"
+                      ></textarea>
+                    </div>
+                    <div class="modal__form_second">
+                      <h5>How to answer you?</h5>
+                      <input type="tel" name="tel" placeholder="Phone number" />
+                      <input type="email" name="email" placeholder="Email" />
+                    </div>
+                    <button class="modal__btn" type="submit">
+                      Send message
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <!-------------------------------------------- modal-------------------------------------------- -->
               <p class="conteiner-service__desc">
                 Is it a small, medium-sized company or a market leader? Local
                 business or multinational company? Do you have your own legal

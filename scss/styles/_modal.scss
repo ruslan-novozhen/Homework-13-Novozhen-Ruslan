@@ -1,23 +1,105 @@
 .modal {
-  background: rgba(50, 50, 100, 0.7);
+  background: rgb(139 139 171);
   position: fixed;
   width: 100%;
   height: 100%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  background: #323264;
-  opacity: 0.7;
+  transform: translate(-50%, -50%) scale(0);
+  transform-origin: center;
+  transition: 0.5s;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 101;
 
-  &__contetn {
+  &__content {
     width: 100%;
     max-width: 650px;
     background: #f5f5fa;
     box-shadow: 0px 15px 80px rgba(40, 40, 86, 0.5);
     border-radius: 12px;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    & h3 {
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 46px;
+      background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    & svg {
+      &:hover {
+        background-color: #e6e6f0;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &_first,
+    &_second {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      & input,
+      & textarea {
+        border: none;
+        border-radius: 8px;
+        height: 56px;
+        padding: 15px;
+        resize: none;
+
+        &::placeholder {
+          font-size: 16px;
+          line-height: 26px;
+          color: #b3b3ba;
+        }
+      }
+      & textarea {
+        height: 130px;
+      }
+      & h5 {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #b3b3ba;
+      }
+    }
+  }
+  &__btn {
+    padding: 18px 30px;
+    background: #24a3ff;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+}
+
+input:checked ~ .modal {
+  transform: translate(-50%, -50%) scale(1);
 }
